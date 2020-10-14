@@ -272,8 +272,8 @@ void rst::rasterizer::rasterize_triangle(const Triangle& t, const std::array<Eig
     auto ymin = std::min({p1.y(),p2.y(),p3.y()});
     auto ymax = std::max({p1.y(),p2.y(),p3.y()});  
     //Eigen::Vector3f line_color = {255, 255, 255}; 
-    for (int x = xmin; x<= xmax; ++x){
-        for (int y = ymin; y<= ymax; ++y){
+    for (int x = xmin; x< xmax; ++x){
+        for (int y = ymin; y< ymax; ++y){
             if(insideTriangle(x,y,t.v)){
             // If so, use the following code to get the interpolated z value.
             auto[alpha, beta, gamma] = computeBarycentric2D(x, y, t.v);
