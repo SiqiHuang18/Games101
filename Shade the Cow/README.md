@@ -1,7 +1,7 @@
 # Shade the cow
 - Normal Shader
 
-![](https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_n.png)
+![](https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_n.png){:height="50%" width="50%"}
 
 - Blinn Phong Shader
 
