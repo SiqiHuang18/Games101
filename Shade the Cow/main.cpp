@@ -260,8 +260,24 @@ Eigen::Vector3f displacement_fragment_shader(const fragment_shader_payload& payl
     // Vector ln = (-dU, -dV, 1)
     // Position p = p + kn * n * h(u,v)
     // Normal n = normalize(TBN * ln)
-    
+    float x = normal.x(),y = normal.y(), z = normal.z();
+    Eigen::Vector3f t (x * y / sqrt(x * x + z * z),  sqrt(x * x + z * z), z * y / sqrt(x * x+z * z));
+    Eigen::Vector3f b = normal.cross(t);
+    Eigen::Matrix3f TBN;
+    TBN.col(0) = t;
+    TBN.col(1) = b;
+    TBN.col(2) = normal; 
+    float w = payload.texture->width, h = payload.texture->height;
+    float u = std::clamp(payload.tex_coords(0), 0.f, 1.f);
+    float v = std::clamp(payload.tex_coords(1), 0.f, 1.f);
 
+    float dU = kh * kn * (payload.texture->getColor(u + 1 / w, v).norm() - payload.texture->getColor(u, v).norm());
+    float dV = kh * kn * (payload.texture->getColor(u, v + 1 / h).norm() - payload.texture->getColor(u, v).norm());
+    Eigen::Vector3f ln(-dU, -dV, 1);
+    
+    point = point + kn * payload.texture->getColor(u, v).norm()* normal ;
+    normal = (TBN * ln).normalized();
+    
     Eigen::Vector3f result_color = {0, 0, 0};
 
     for (auto& light : lights)
@@ -325,8 +341,21 @@ Eigen::Vector3f bump_fragment_shader(const fragment_shader_payload& payload)
     // dV = kh * kn * (h(u,v+1/h)-h(u,v))
     // Vector ln = (-dU, -dV, 1)
     // Normal n = normalize(TBN * ln)
+    float x = normal.x(),y = normal.y(), z = normal.z();
+    Eigen::Vector3f t (x * y / sqrt(x * x + z * z),  sqrt(x * x + z * z), z * y / sqrt(x * x+z * z));
+    Eigen::Vector3f b = normal.cross(t);
+    Eigen::Matrix3f TBN;
+    TBN.col(0) = t;
+    TBN.col(1) = b;
+    TBN.col(2) = normal; 
+    float w = payload.texture->width, h = payload.texture->height;
+    float u = std::clamp(payload.tex_coords(0), 0.f, 1.f);
+    float v = std::clamp(payload.tex_coords(1), 0.f, 1.f);
 
-
+    float dU = kh * kn * (payload.texture->getColor(u + 1 / w, v).norm() - payload.texture->getColor(u, v).norm());
+    float dV = kh * kn * (payload.texture->getColor(u, v + 1 / h).norm() - payload.texture->getColor(u, v).norm());
+    Eigen::Vector3f ln(-dU, -dV, 1);
+    normal = (TBN * ln).normalized();
 
     Eigen::Vector3f result_color = {0, 0, 0};
     result_color = normal;
