@@ -4,16 +4,16 @@
 
 - Blinn Phong Shader
 
-![](https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_p.png)
+<img src="https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_p.png" height ='50%' width="50%">
 
 - Texture Shader
 
-![](https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_t.png)
+<img src="https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_t.png" height ='50%' width="50%">
 
 - Bump Shader
 
-![](https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_b.png)
+<img src="https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_b.png" height ='50%' width="50%">
 
 - Displacement Shader
 
-![](https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_d.png)
+<img src="https://github.com/SiqiHuang18/Games101/blob/main/Shade%20the%20Cow/images/output_d.png" height ='50%' width="50%">
