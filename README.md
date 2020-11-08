@@ -3,3 +3,4 @@ This Repo contains my implementation of projects in online computer graphics cou
 
 ## Setup
 Opencv2, Eigen tested on OS X
+OpenMP for Path Tracing and Animation
