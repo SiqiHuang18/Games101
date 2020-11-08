@@ -1,4 +1,4 @@
-#Path Tracing
+# Path Tracing
 
 - Implement path tracing to render an image of Cornell Box with 20 samples per pixel
 - Build upon the Bouding Volume Hierachies code from 'Accelerating Ray Tracing'
