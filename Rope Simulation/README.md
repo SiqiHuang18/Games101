@@ -3,4 +3,4 @@
 - Green rope is modeled with global damping and solved with Verlet Integration
 - Blue rope is modeled without damping and solved with Semi-explicit Euler Method
 
-<img src = 'https://github.com/SiqiHuang18/Games101/blob/main/Rope%20Simulation/images/rope-sim.gif' height=100% width=100%>
+<img src = 'https://github.com/SiqiHuang18/Games101/blob/main/Rope%20Simulation/images/rope-sim.gif' height=80% width=80%>
