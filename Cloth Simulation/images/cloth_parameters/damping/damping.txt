@@ -1,0 +1,3 @@
+No noticeable difference in cloth final state
+Low Damping value will cause cloth to fall quickly
+High Damping value will cause cloth to fall slowly
