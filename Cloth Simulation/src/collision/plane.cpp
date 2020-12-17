@@ -15,7 +15,7 @@ void Plane::collide(PointMass &pm) {
 
   
   
-  if (dot(pm.position-point, normal)*dot(pm.last_position-point, normal) < 0 ){
+  if (dot(pm.position-point, normal)*dot(pm.last_position-point, normal) <= 0 ){
 
     
     Vector3D ray_dir = (pm.position - pm.last_position)/(pm.position - pm.last_position).norm(); 
