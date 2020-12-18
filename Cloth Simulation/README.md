@@ -12,4 +12,13 @@ with shader programs in Opengl.
 
 <h2 align="middle">Part I: Masses and springs</h2>
 
-<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/cloth_construction/all_constraints.png" height = 50%, width =50%>
+Wire frame with all three constraints
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/cloth_construction/all_constraints.png" height = 100%, width =100%>
+
+
+<h2 align="middle">Part I: Simulation</h2>
+
+Simulate with low density
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/cloth_parameters/density/density_1.png" height = 100%, width =100%>
