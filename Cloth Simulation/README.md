@@ -34,3 +34,7 @@ Simulate with low ks
 Simulate with high ks
 
 <img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/cloth_parameters/ks/ks_50000.png" height = 100%, width =100%>
+
+cloth wih 4 pins
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/cloth_parameters/pinned4.png" height = 100%, width =100%>
