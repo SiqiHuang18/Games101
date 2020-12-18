@@ -68,7 +68,7 @@ Cloth resting on plane
 Shaders are programs on GPU that parallelize some parts of graphics pipeline. Vertex shader handles the transformation of each vertex in parallel，
 and it passes the geometric information of vertices to the fragment shader. Fragment shader then combines the geometric information and light information
 in a way that can simulate different materials' interatction with light, and output the resulting color onto the screen. 
-Fragment shader 
+
 
 Blinn-Phong shader
 
