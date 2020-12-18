@@ -53,4 +53,31 @@ ks = 50000
 
 Cloth resting on plane
 
-<img src = https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/collision/plane.png" height = 100%,width=100%>
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/collision/plane.png" height = 100%,width=100%>
+
+<h2 align="middle">Part IV: Self-Collision </h2>
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/self_collision/init.png" height = 100%,width=100%>
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/self_collision/med.png" height = 100%,width=100%>
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/self_collision/final.png" height = 100%,width=100%>
+
+<h2 align="middle">Part V: Shader </h2>
+
+Shaders are programs on GPU that parallelize some parts of graphics pipeline. Vertex shader handles the transformation of each vertex in parallel，
+and it passes the geometric information of vertices to the fragment shader. Fragment shader then combines the geometric information and light information
+in a way that can simulate different materials' interatction with light, and output the resulting color onto the screen. 
+Fragment shader 
+
+Blinn-Phong shader
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/shaders/phong.png" height = 100%,width=100%>
+
+Texture shader
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/shaders/texture.png" height = 100%,width=100%>
+
+Mirror shader
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/shaders/mirror.png" height = 100%,width=100%>
