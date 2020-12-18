@@ -1,4 +1,4 @@
-# Assignment 4: Cloth Simulation
+# Cloth Simulation
 
 <h2 align="middle">Overview</h2>
 
