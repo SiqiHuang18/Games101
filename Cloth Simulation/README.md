@@ -38,3 +38,19 @@ Simulate with high ks
 cloth wih 4 pins
 
 <img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/cloth_parameters/pinned4.png" height = 100%, width =100%>
+
+<h2 align="middle">Part III: Collision </h2>
+
+Cloth resting on sphere
+
+ks = 500
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/collision/sphere_ks500.png" height = 100%, width =100%>
+
+ks = 50000
+
+<img src = "https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/collision/sphere_ks50000.png" height = 100%, width =100%>
+
+Cloth resting on plane
+
+<img src = https://github.com/SiqiHuang18/Games101/blob/main/Cloth%20Simulation/images/collision/plane.png" height = 100%,width=100%>
