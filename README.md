@@ -6,4 +6,4 @@ Opencv2, Eigen tested on OS X
 
 OpenMP for Path Tracing  
 
-OpenGL for Rope Simulation
+OpenGL for Rope Simulation and Cloth Simulation
